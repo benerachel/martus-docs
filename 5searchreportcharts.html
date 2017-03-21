@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Managing Records</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Martus</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Searching, Reporting, and Charts</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i>Searching, Reporting, and Charts</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Oct 12th, 2016</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <section id="search-section" class="doc-section">
+                                <h2 class="section-title">Searching</h2>
+                                <div class="section-block">
+                                    <h3>Search for specific records</h3>
+                                    <p>Martus searches all records every label, unless the record only exists in the Trash.</p>
+                                    <h3>Perform a Simple Search</h3>
+                                    <p>The simple search allows you to search your records from the Martus main taskbar.
+                                    <ol class="list">
+                                        <li>Input your search terms in the <i>Search</i> field of the Martus main taskbar.</li>
+                                        <li>Select the <b>Search</b> icon ( ) or simply hit <b>Enter</b> on your keyboard. Your search results will be listed in the record list pane under the heading <i>Search Results</i>.</li>
+                                        </ol>
+                                    <h3>Saving Your Search Results</h3>
+                                    <ol class="list">
+                                        <li>Once you perform your search, select any results that you would like to save.</li>
+                                        <li>Select the <b>Move</b> icon in the taskbar beneath the list pane.</li>
+                                        <li>Choose an existing folder.</li>
+                                        <li>Select <b>Move</b>.</li>
+                                        </ol>
+                                        <p>Note: You may also create a new folder for your search results using the <b>Add</b> icon in the Martus sidebar and then follow the above directions to perform a search.</p>
+                                    <h3>Perform an Advanced Search</h3>
+                                    <ol class="list">                                  
+                                        <li>Select <b>Analysis</b> > <b>Advanced Search</b></li>
+                                        <li>In the <i>Search</i> dialog box, select the field to search, indicate how the record field should compare to the search terms, and enter the word(s) or date(s) you are searching for. You can search for words in any language. If you are searching for terms in a multi-item list, select which detail in the item to search. When selecting text fields, you can ask Martus to scan and load all the values that have been entered for those fields in your records on the local computer by selecting the <i>Load all possible values for selected field</i> checkbox in the field selection screen. For other field types the checkbox will be “grayed out” (i.e. not selectable).</li>
+                                        [image]
+                                        <p>There is also a <i>Load all possible values for selected field</i> button in the main Search screen, if users want to load field values without going into the field selection screen (for example, after loading a previously saved search, or if they did not select the checkbox in the field selection screen). For “data-driven dropdown” (dropdown lists created by data entered in record grids), the values that were entered in records are automatically loaded when the field is chosen in the <i>Search</i> screen. See <a href="#">Customize record fields</a> for more about data-driven dropdown fields.</p>
+                                        [image]
+                                        <p>Note: If multiple fields have the same label in the field selection screen, click the plus sign next to the label name to choose the appropriate field. Martus displays the tag name and field type (e.g., “text”) for each field with that label. If you have multiple dropdown fields with the same label, Martus will merge all the values into one list in the <i>Search</i> screen. Any customized field labels that contain only spaces will be replaced with that field's tag in the search field list.</p>
+                                        <li>If you would like to add additional search constraints, press <b>Enter</b> or click <b>Insert Row</b> to create a new search row. You can search another field or limit your search to a certain date or date range.</li>
+                                        <li>If you would like to delete a search constraint, select that row and click <b>Delete Selected Row</b>.</li>
+                                        <p>Note: There are several ways record fields can compare to search terms.</p>
+                                        <p><b>contains</b>: Any records in which the specified field contains the search terms</p>
+                                        <p><b>=</b>: Only the records in which the specified field exactly matches the search terms</p>
+                                        <p><b>!=</b> :   Records in which the specified field does not match the search terms</p>
+                                        <p> <b>></b>:    Records in which the field’s value is greater than the search value</p>
+                                        <p><b>>=</b> : Records in which the field’s value is greater than or equal to the search value</p>
+                                        <p><b><</b> :    Records in which the field’s value is less than the search value</p>
+                                        <p><b><=</b> : Records in which the field’s value is less than or equal to the search value</p>
+                                        <li>Click <b>Search</b>. A dialog box will display the search progress, and allow you to cancel the search at any time if you wish.</li>
+                                        <li>When the search is complete, the <i>Search Results</i> dialog box reports how many records were found that matched your criteria. Click <b>OK</b>. </li>
+                                        <li>The <i>Search Results</i> folder lists the records found in your search. (The folder contains copies of the records; the originals remain in their original folders.) If your search resulted in no records, the <i>Search Results</i> folder will still contain the records from the previous search.</li>
+                                        </ol>
+                                    <h3>Notes on Searching for Records</h3>
+                                    <ul class="list">                                   
+                                        <li>Martus searches all versions of every record. Search criteria may match an earlier version of the record. To access previous versions click the <b>Record Details></b> button at the bottom of the record. For more information, see <a href="#">View earlier versions of a record</a>.</li>
+                                        <li>To search only the most recent versions of records, select <i>Only Search Most Recent Versions of Record</i> in the Search dialog box. The <i>Search</i> dialog box will remember this selection the next time you run a search.</li>
+                                        <li>Martus searches all rows of any grid (table) fields for criteria and doesn’t require that the terms are all on the same row. See <a href="#">Customize record fields</a> for more information about grid fields. </li>
+                                        <li>To specify that all grid column specifications in the <i>Search</i> screen be matched to a single row of record grid data, check the <i>Match grid column specifications…</i> checkbox in the Search screen. For example, to search for a specific victim name in a single grid row created after a certain date, select the checkbox and enter the following fields in the Search screen: "Victim Information: First Name" = x and "Victim Information: Last Name" = y and "Date Created" >= YYYY-Mon-DD. Without selecting the Match grid column specifications… checkbox, Martus will find records created after the specified date where any row has the first name specified and any other row has the last name specified. </li>
+                                        <li>Because Martus searches all rows of any grid (table) fields for criteria, it may find records where one grid row matches your criteria but other rows do not. For example assume a record with multiple rows of data corresponding with locations A, B, and C. When searching for records where location != C (does not equal C), Martus will find that record as there are 2 rows in the record grid where the location is not C. </li>
+                                        <li>Searches on a multi-level dropdown are exact matches, not partial or “starts with” matches, searches must pick the exact level that should be searched. For example, an “Event Location” field that has three levels (State/City/Neighborhood) will have three entries in the search field list: Event Location: State, Event Location: City, and Event Location: Neighborhood. To search all records that have an Event Location anywhere in California (regardless of the City), select the “Event Location: State” field to search on and pick California off the dropdown list choices. If selecting Event Location: City to search on and then pick California but leave the City level blank, Martus will only find entries where there was no City data entered (City was blank), as opposed to ANY location with California regardless of what data was entered at the City level.</li>
+                                        <li>Martus may use the tag and field type to try and determine when different fields were meant to be the same when it searches. We encourage you to make field tags and labels in a customization clearly related to each other to avoid any confusion. See <a href="#">Customize record fields</a> for more information about configuring custom fields.</li>
+                                        </ul>
+                                        <p>For some additional help with searching, see <a href="#">Frequently Asked Questions</a> or email <a href="#">martus@benetech.org</a>.</p>
+                                        [image]
+                                        <p>To save your search criteria, click Save This Search in the Search dialog box. Then, give the search criteria a name you’ll recognize later. Martus saves it with the .mss (<i>Martus Search Specification</i>) extension in the folder you choose. To use search criteria you’ve saved, click <b>Load Previous Search</b> in the <i>Search</i> dialog box, and then navigate to the .mss file you want to use. </p>
+                                        <p>Note: Martus will remember the immediately previous search criteria without you needing to load it.></p> 
+                                    <h3>Search Tips</h3>
+                                    <ul class="list">
+                                        <li>To search for an exact phrase, type it with quotation marks around the phrase (e.g., "Witness Testimony"). If you do not put quotation marks around the phrase, Martus will search for the words individually. </li>
+                                        <li>Martus will find the text you enter whether it’s a complete word or part of a larger word. For example, if you search for the word prison, you’ll see records that include the words prison, imprison, and imprisonment. Likewise, if you search for the word prison, Martus will find records that include attachments with names such as photos-prison.jpg and prisoners-report.doc.</li>
+                                        <li>You can search for words in any language. Martus searches are not case-sensitive in English and other purely Latin character languages, so it doesn’t matter whether a word is capitalized or not. </li>
+                                        <li>Use the word “or” to broaden your search, or the word “and” to narrow it. You can use the and / or dropdowns to specify different fields you want search across (e.g., you want to search for records that have "Last Saved Date" in the last week and have a certain author). If you want to search on multiple text values within a single record field, you can use “or” or “and” in-between words in the <i>Search For...</i> entry box. For example, if you search "Any Field" for <i>prison</i> or <i>jail</i> you’ll see a list of records that contain either word anywhere in the record. If you search for <i>prison and assault</i> you’ll see a list of records that contain both words. The keyword "and" is implied, so if you search for <i>prison assault</i> Martus will find the same records as if you searched for <i>prison and assault</i>.</li>
+                                        <li>When you use both "and" and "or", your search terms are grouped from the beginning of your list (either across record fields or within a particular field). For example, if you enter prison or jail and trial in the <i>Search For</i>... entry box, Martus will search for any records that contain either of the words prison or jail, and also contain the word trial. But if you enter <i>prison and jail or trial</i> Martus will search for any records that contain both the words prison and jail, or contain the word trial. </li>
+                                        <li>If you are using a language other than English, you can use the translation of the words "or" or "and" in that language or you can use the English words "or" and "and" to search. For example, if you are using Martus in Spanish, use the word "o," "y," "or," or "and" when searching.</li>
+                                        <li>For languages that do not use spaces to separate words, you need to put spaces before and after any “or” / “and” keywords you use in your search.</li>
+                                        </ul>
+                                    <h3>Questions</h3>
+                                    <p><a href="#">Martus is finding either more or fewer records than I expected. What could be causing this?</a></p>
+                                    <p><a href="#">I am seeing duplicate entries in my dropdown list search criteria values in the search screen. What could be causing this?</a></p>
+                                    <p><a href="#">I deleted a record from the Trash, but it still appears in another folder.</a></p>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="create-reports-section" class="doc-section">
+                                <h2 class="section-title">Create Reports</h2>
+                                <div class="section-block">
+                                     <p>You can create customized reports from information in the records on your computer, and then print those reports to a printer or to an HTML file (which can be opened in a browser, or other application such as word processor or spreadsheet for further editing/formatting if desired.)</p> 
+                                     <p>To create a report:</p>
+                                        <ol class="list">
+                                    <li>Choose <b>Analysis</b>> <b>Reports</b>. </li>
+                                    <li>To create a new report format, click <b>Create New Tabular Report</b> or <b>Create New Page Report</b>. A tabular report lists record fields as columns in a table, with each record as one row in the table. A page report lists the selected subset of fields from each record separately, and is formatted as records appear when printed individually. </li>
+                                     <p>If you want to use a report format you’ve previously saved, click <b>Use Existing Report Format</b>, open the saved .mrf (<i>Martus Report Format</i>) file and skip to step 5. </p>
+                                    <li>In the Create Report dialog box, select the fields you want to include in the report, and then click <b>OK</b>.</li>
+                                     <p>If you’re creating a tabular report, click <b>Add</b> in the <i>Organize Report Fields</i> dialog box to open the <i>Create Report</i> dialog box, select the fields you wish to include and hit <b>OK</b>. You can then change the order of fields on the report by selecting a field and clicking <b>Move Up</b> or <b>Move Down</b>. Click <b>OK</b> when you’ve arranged the fields the way you want them.</p>
+                                    <li>In the <i>Save Report Format As</i> dialog box, enter a name for the format you’ve created, and then click <b>Save</b>. Martus saves the report format with an .mrf extension in the directory you choose (it will put it in your Martus account directory by default).</li> 
+                                     <p>Note: If you cancel out of the Save Report Format As dialog box, your report format will be lost. You must save each report format you create in order to run the report. </p>
+                                    <li>In the <i>Search</i> dialog box, enter the criteria for records you want to include in your report. To use search criteria you’ve previously saved, click <b>Load Previous Search</b>. When you’ve entered the search criteria, click <b>Search</b>. For more information on searching, see <a href="#">Searching for specific records</a>. </li>
+                                     <p>Note: Martus will remember the immediately previous search criteria without you needing to load it. </p>
+                                    <li>Specify the records’ order in the report. You can select up to three fields by which to sort. Martus sorts the records by the first field you choose, and if multiple records have the same information in the first field, it then sorts by the second field, and finally by the third field. For each field, click <b>Choose Field…</b>, select the field you want Martus to sort by, and click <b>OK</b>. </li>
+                                     <p>Note: Martus will remember the immediately previous sort selection until you exit Martus.</p>
+                                    <li>Choose whether to print only the record information, only summary counts, or both. If you include summary counts, the report contains total counts of records grouped by the fields you’ve chosen to sort the records on. For example, if you’re sorting by author and you choose to print the record information and summary counts, the report will include the record data and a summary of how many records were created by each author.</li>
+                                    <li>Martus displays a preview of the report that will print. Click <b>Print to Printer</b> to print the report to your printer. Click <b>Print to File</b> to save the report as an HTML file that you can open in a web browser or word-processing/spreadsheet application. If you want to make changes to the report before printing, click <b>Cancel</b>, choose <b>Analysis</b>> <b>Reports</b>, and create a new report format. </li>
+                                    [image]
+                                     <p>Note: You can copy and paste text from the preview screen directly into other applications, e.g., word-processors or spreadsheets.</p>
+                                     <p>Note: Martus only displays data from the latest version of each record on your computer in the report.</p>
+                                     </ol>
+                                    <p>See examples of reports below:</p>
+                                    <p><i>Tabular report with summary counts:</i></p>
+                                    [image]
+                                    <p><i>Page report without summary counts:</i></p>
+                                    [image]
+                                    <h3>Important Notes on Reports</h3>
+                                    <ul class="list">
+                                    <li> Martus reports are intended to give you information about the status/progress of data that has been gathered and entered in Martus, but not to analyze “what happened” from the data that has been entered. So for example we can count the number of records that came from a particular time frame or region (if your project is collection that information), but not how many killings there were in a particular region.</li>
+                                    <li>Martus reports are also meant to focus on fields in which the information is distinct for a record or source document. For example, you can design reports to search for all records entered by a certain user, or given by individuals of a given ethnicity (if your project is collecting that information).</li>
+                                    <li>Martus reports do not correct for the following:</li>
+                                     <ul class="list">
+                                        <li>Sampling bias (e.g. all records entered being more from one particular region than any others, even if the project is covering incidents that happened across all of them). </li>
+                                        <li>Duplicate reporting (i.e. more than one record may exist about the same incident, or the same person may be mentioned using different names, or there may be multiple people with the same name).</li>
+                                        <li>Data quality issues (e.g. typos that might lead to a search not finding records, fields being left blank where values were expected). Some of these issues can be addressed in a project customization, by requiring certain fields to be entered before a record or grid row can be saved, or using dropdown fields to avoid typos and guarantee consistency in searching.</li>
+                                        <li>Possible inconsistency in how data is entered in Martus by different people. For more on this topic, see <a href="https://hrdag.martus.org/resources/controlled_vocab.shtml">"Controlled Vocabulary"</a> and the “Inter-rater Reliability” section on <a href="https://hrdag.martus.org/resources/core_concepts.shtml">https://hrdag.martus.org/resources/core_concepts.shtml</a></li>
+                                        </ul>
+                                    <li>Martus reports especially should not attempt to count the number of violations, victims or perpetrators, beyond counting the number of records that match search criteria. Before counting violations or victims/perpetrators, important data processing needs to take place before such counting can be considered scientifically defensible. This includes addressing the possibility of duplicate reporting (more than one record may exist about the same incident); representing the complexity of human rights violations (an individual who was the victim of a given act may later become the perpetrator of a different act, or vice versa); and maintaining consistency in meaning and counting (ensuring, for example, making sure that all the data entered in records used consistent definitions for violations.)</li>
+                                    <li>If you would like to perform descriptive or qualitative analysis of the information entered into Martus, Benetech can help you to use a tool to export and summarize data for your project. The exported data may be able to be reviewed using analytical tools, but please keep in mind that quantitative or inferential statistical analysis cannot be performed until additional steps have been taken in processing the data, and without enough volume and different sources of data, statistical analysis may not give meaningful or reliable results.</li>
+                                    </ul>
+                                    <h3>Questions</h3>
+                                    <p><a href="#">Data Quality and Analysis</a></p>
+                                    <p><a href="#">Martus is finding either more or fewer records than I expected. What could be causing this?</a></p>
+                                     </div>
+                                     <div>
+                            </section><!--//doc-section-->
+                            <section id="charts-section" class="doc-section">
+                                <h2 class="section-title">Create Charts</h2>
+                                <div class="section-block">
+                                <p>You can create customized charts from information in the records on your computer, and then print those reports to a printer or to a JPEG image file (which can be opened in various applications such as image display tools, or a word processor for further editing/formatting if desired.) </p>
+                                <p>To create a chart:</p>
+                                <ol class="list">
+                                    <li>Choose <b>Analysis</b> > <b>Charts</b>. </li>
+                                    <li>Select click <b>Bar Chart</b>, <b>3D Bar Chart</b>, <b>Pie Chart</b>, or <b>Line Chart</b> from the Type of Chart dropdown list. A Bar or 3D Bar Chart shows counts of records for each value of the field you select, while a Pie Chart shows both the counts of records and the percentage of total records that match your defined search criteria (chosen when you create the chart). A Line Chart shows the number of records created over the life of an account. See examples below for each type of chart. </li>
+                                [image]
+                                <p>Note: Any data displayed in charts will not be encrypted. Anyone accessing the chart (in printed or electronic form) will be able to access all the included data.</p>
+                                    <li>Click on the <b>Choose Field…</b> button to select the field you want to include in the chart, pick a field from the list (which will include all the standard or custom fields that are in any of the records on your computer), and then click <b>OK</b>.</li>
+                                [image]   
+                                    <li>If desired, enter text that will be displayed beneath the title of the report in the <i>Subtitle</i> field (e.g. “Human Rights Organization data collection monthly status report”). </li>
+                                    <li>Hit the <b>OK</b> button.</li>
+                                    <li>In the <i>Search</i> dialog box, enter the criteria for records you want to include in your chart. To use search criteria you’ve previously saved, click <b>Load Previous Search</b>. When you’ve entered the search criteria, click <b>Search</b>. For more information on searching, see <a href="#">Searching for specific records</a>. </li>
+                                <p>Note: Martus will remember the immediately previous search criteria without you needing to load it.</p>
+                                    <li>Martus displays a preview of the chart. Click <b>Print to Printer</b> to print the report to your printer (Martus will automatically scale the printout to fit the page width, based on your printer preferences). Click <b>Print to File</b> to save the report on your computer as a JPEG image file that you can open in the image display program of your choice, or copy/insert into a word-processing application. If you want to make changes to the report before printing, click <b>Cancel</b>, choose <b>Analysis</b> > <b>Charts</b>, and create a new chart. </li>
+                                <p>Note: Martus only displays data from the latest version of each record on your computer in the chart.</p>
+                                </ol>
+                                <h3>Examples of charts:</h3>
+                                <p><i>Bar Chart: </i></p>
+                                [image]
+                                <p><i>3D Bar Chart: </i></p>
+                                [image]
+                                <p><i>Pie Chart:</i></p>
+                                [image]
+                                <p><i>Line Chart (Records over Time):</p></i>
+                            <h3>Important Notes on Charts</h3>
+                            <ul class="list">
+                                 <li>Martus charts are intended to give you information about the status/progress of data that has been gathered and entered in Martus, but not to analyze “what happened” from the data that has been entered. So for example we can count the number of records that came from a particular time frame or region (if your project is collection that information), but not how many killings there were in a particular region.</li>
+                                 <li>Martus charts are also meant to focus on fields in which the information is distinct for a record or source document. For example, you can design reports to search for all records entered by a certain user, or given by individuals of a given ethnicity (if your project is collecting that information).</li>
+                                 <li>Martus charts do not correct for the following:</li>
+                                 <ul class="list">
+                                 <li>Sampling bias (e.g. all records entered being more from one particular region than any others, even if the project is covering incidents that happened across all of them). </li>
+                                 <li>Duplicate reporting (i.e. more than one record may exist about the same incident, or the same person may be mentioned using different names, or there may be multiple people with the same name).</li>
+                                 <li>Data quality issues (e.g. typos that might lead to a search not finding records, fields being left blank where values were expected). Some of these issues can be addressed in a project customization, by requiring certain fields to be entered before a record or grid row can be saved, or using dropdown fields to avoid typos and guarantee consistency in searching.</li>
+                                 <li>Possible inconsistency in how data is entered in Martus by different people. For more on this topic, see “<a href="https://hrdag.martus.org/resources/controlled_vocab.shtml">Controlled Vocabulary</a>” and the “Inter-rater Reliability” section on <a href="#">https://hrdag.martus.org/resources/core_concepts.shtml</a>. </li>
+                                 </ul>
+                                 <li>Martus charts especially should not attempt to count the number of violations, victims or perpetrators, beyond counting the number of records that match search criteria. Before counting violations or victims/perpetrators, important data processing needs to take place before such counting can be considered scientifically defensible. This includes addressing the possibility of duplicate reporting (more than one record may exist about the same incident); representing the complexity of human rights violations (an individual who was the victim of a given act may later become the perpetrator of a different act, or vice versa); and maintaining consistency in meaning and counting (ensuring, for example, making sure that all the data entered in records used consistent definitions for violations.)</li>
+                                 <li>If you would like to perform descriptive or qualitative analysis of the information entered into Martus, Benetech can help you to use a tool to export and summarize data for your project. The exported data may be able to be reviewed using analytical tools, but please keep in mind that quantitative or inferential statistical analysis cannot be performed until additional steps have been taken in processing the data, and without enough volume and different sources of data, statistical analysis may not give meaningful or reliable results.</li>
+                            <h3>Questions:</h3>
+                                    <p><a href="#">Data Quality and Analysis</a></p>
+                                    <p><a href="#">Martus is finding either more or fewer records than I expected. What could be causing this?</a></p>  
+                                        </div>
+                                     </div>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="data-quality-and-analysis-section" class="doc-section" style="margin-left:230px;">
+                                <h2 class="section-title">Data Quality and Analysis</h2>
+                                <div class="section-block">
+                                    <p>Martus has limited data analysis tools built into the encrypted environment that allow the user to conduct advanced searches, and create reports and charts. You can also export data as xml or csv to manipulate the data in another program but this data is now unencrypted and insecure. When analyzing your data it is important to recognize the limiting factors affecting the validity of any conclusions made from the data you have collected in Martus. Human rights groups depend on their credibility, so how they talk about their information and their conclusions is extremely important. Numbers may be sexy, but they are also easily misrepresented. Data does not equal reality. A database is a representation of what we can observe, not representative of reality, and it is important to acknowledge and represent it as such. </p>
+                                    <p>Selection Bias: Most human rights data is a convenience sample. Human rights violations don’t tend to be well planned or predicted—if they were we might be better at combatting them. But a convenience sample has no control. Thus any conclusions should be accompanied by warnings and explanations of the limits of your data.</p>
+                                    <p>Your observed data may be over or under counting violations. Undercounting based on age, geography, time, or network/population are common. Some examples:</p>
+                                <ol class="list">
+                                    <li>Age: because of legal restrictions, you are not able to interview anyone under 18; but it could be that youth are the primary victims of what you’re counting, for example, new incidents of HIV. Your sample will be skewed older and you’ll miss the main population. If you’re making policy decisions based on these conclusions, you’re going to miss the mark.</li>
+                                    <li>Geography: the area of worst violence in Syria has been X, but reporters can’t get in, and few people are getting out, so abuses in that area are among the worst and most numerous, but reports are the lowest. It appears to have the least violence but actually has the most.</li>
+                                    <li>Network: People tend to reach their networks first and may undercount others outside of their networks. For example, the majority of violence may be happening against a minority religious group, but an organization serving a different religious community may not be able to reach this population or seek it out and so undercounts incidents against that minority community. The same could apply for gay rights organization that traditionally has served mostly men—they may be likely to undercount lesbians because they don’t have many women in their existing network.</li>
+                                    <li>Other barriers may be social taboos, language, or others. Undercounting is particularly of concern in human rights data. Human rights movements are often about fighting the oppression perpetrated by one group against another—the person who controls the information often controls the message and therefore the outcome. It’s important to make sure that those who are already disadvantaged are not further disadvantaged by being undercounted and underreached.</li>
+                                    </ol>
+                                    <p>Overcounting occurs when there are multiple counts of the same event or incident. For example, if a woman in the DRC experiences rape, she’s likely to seek services and support from multiple centers. If they are all documenting sexual assaults against women, that incident is likely to be counted multiple times. This is common with crowdsourcing apps.</p>
+                                    <p>For more information on data quality considerations see: <a href="https://hrdag.org/coreconcepts/">https://hrdag.org/coreconcepts</a>
+                                </div>
+                            </section><!--//doc-section-->
+
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                             
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                             <ul id="doc-menu" class="nav doc-menu">
+                                <li><a class="scrollto" href="#search-section">Searching</a></li>
+                                <li><a class="scrollto" href="#create-reports-section">Create Reports</a></li>
+                                <li><a class="scrollto" href="#charts-section">Create Charts</a></li>
+                                <li><a class="scrollto" href="#data-quality-and-analysis-section">Data Quality and Analysis Section</a></li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+    </div><!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" targe="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+</body>
+</html>

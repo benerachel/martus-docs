@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Creating Customized Templates for Martus</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Martus</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                </div><!--//branding-->
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Creating Customized Templates for Martus</li>
+                </ol>
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i>Creating Customized Templates for Martus</h1>
+                    <div class="meta"><i class="fa fa-clock-o"></i> Last updated: Oct 12th, 2016</div>
+                </div><!--//doc-header-->
+                <div class="doc-body">
+                    <div class="doc-content">
+                        <div class="content-inner">
+                            <p></p>
+                            <p>Some groups find it useful to customize their records to capture specific information such as the source of the record data, the names of witnesses, the country in which the incident occurred, or a table of information about victims. Additionally, you may find it easier to import custom fields into other applications for reporting and analysis.</p>
+                            <p>There are two methods for creating or updating your custom template: Use our form builder website or edit in XML. We recommend the first method if you want to create simple forms and the second for more advanced users, who want to modify existing formats.</p>
+                            <section id="form-builder-section" class="doc-section">
+                                <h2 class="section-title">Create or Update a Template on the Form Builder Website</h2>
+                                <div class="section-block">
+                                    <p>Making customized forms for Martus can be done by using the <a href="https://benetech.github.io/forms/">form builder website</a>. Here is a <a href="ttps://youtu.be/Z5wiiknxgxg">video tutorial</a>.<p>
+                                    <ol class="list">
+                                    <li>Use the buttons in the upper toolbar to select the question type you would like to add.</li>
+                                    <li>Give the question an identifying name in the “Question ID box” and write the text you would like to appear in the “Label” box.</li>
+                                    <li>Adjust the order of fields by dragging and dropping on the question list on the left.</li>
+                                    <li>When your form is complete click the export button on the upper right, then select where to save the form.</li>
+                                    <li>To edit the form, navigate to the form builder webpage, click the import button on the upper right, and select the saved form.</li>
+                                    <li>Import your new custom form by following the process to <a href="#">Import Templates from a File</a>.</li>
+                                    </ol>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="xml-section" class="doc-section">
+                                <h2 class="section-title">Create or update a template from XML</h2>
+                                <div class="section-block">
+                                     <p>Editing in XML you can customize the records you create by rearranging the fields, adding fields, or removing fields you don’t need. You can create several kinds of custom fields, including Yes/No, date, date range, drop-down lists, grid (table), language, messages (notes), single line text, and multi-line text fields. </p> 
+                                    <h3>About XML</h3>
+                                    <p>Making customized forms for Martus can be done by creating a new XML file or editing an existing one. Anyone can learn this basic XML, Benetech is here to hold your hand if you need it. XML code tells Martus what to do. </p>
+                                    <p>XML uses a series of standard commands:</p>
+                                    <ul class="list">                       
+                                    <li>Field type: This is the kind of entry you would like to make in your record. There are few different types of fields: strings (text), numbers, dates, dropdowns, checkboxes. You can also use field type to create sections.</li>
+                                    <li>Tag: Tag is the name Martus recognizes for each field. Tag is not case sensitive but cannot have spaces or other characters. </li>
+                                    <li>Label: Label is the text that will appear in a record. This text can have spaces.</li>
+                                    </ul>
+                                    <p>There are also optional commands:</p>
+                                    <ul class="list">
+                                    <li>Default Value</li>
+                                    <li>Required Field</li>
+                                    <li>Reusable Choices: i.e. the same options for dropdowns throughout the customization.</li>
+                                    </ul>
+                                    <p>XML files will open in many formats but an XML editor will display different fields in different colors and have other such features to make editing easier. </p>
+                                    <h3>Create or Update a Template from XML</h3>
+                                    <ol class="list">
+                                    <li>Export the Martus Standard Fields template as an XML file if you are creating a new template; or export the template which you would like to update as an XML file. </li>
+                                    <li>Open the template in an XML editor.</li>
+                                    <li>The document must begin with <FormTemplate><Title>Template Title</Title><CustomFields> and end with </CustomFields></FormTemplate>. </li>
+                                    <p>Note: If you are working from the Martus Standard Fields template, you must add <Title </Title> yourself.</Title></p>
+                                    <li>You can add and remove any fields in the template aside from the 'author', 'entrydate', 'language', and 'title' fields.</li>
+                                    <ul class="list">
+                                    <li>To re-order fields, cut and paste them into the order you want them to appear.</li>
+                                    <li>To add a field, click an insertion point where you want the field to appear. Enter the type of field you want to use: BOOLEAN, DATE, DATERANGE, DROPDOWN, GRID, LANGUAGE, MESSAGE, MULTILINE, SECTION or STRING. Each field must have a unique tag, which can be any single word except those already used by the system, in any language, and cannot contain spaces, special characters, or punctuation. For example, you could use 'VictimsName' or 'EyeColorChoice'.  Each field should be given a label, which is what will appear next to the field in the record; it can contain any characters in any language except certain special characters (e.g., < and > which are used by the system). For example, you might use 'Name of 1st Witness.'  See the examples below. </li>
+                                    <li>To remove a field, delete the field definition text (type, tag, label) for the field you want to remove. You cannot remove certain required fields, including the author, title, language, and entry date.</li>
+                                    <li>You can create sections (which you can hide/unhide) in your records using a SECTION field type.  Sections can include as many individual fields as you like.</li>
+                                    <li>You can require certain fields or grid columns to be entered before saving a record by using <RequiredField/> in the field definition.</li>
+                                    <li>You can restrict date fields, date grid columns, date range fields, and date range grid columns by using <MinimumDate> and/or <MaximumDate> tags with a date in YYYY-MM-DD format. A blank date (shown as <MaximumDate></MaximumDate> or <MaximumDate/>)  means 'today', although it may allow one day earlier or later, due to time zone issues.  Please note that you can require date validation of standard fields as well as custom fields. Date field Year dropdown choices will reflect the hard-coded date ranges specified in the customization. Note: The year format in the customization must always be a 'Gregorian' year like 2009, even if Martus is configured to use Thai or Persian dates.</li>
+                                    <li>You can populate drop-down lists (either inside or outside of a multi-item list) in 3 ways:
+                                    <ol class="list"> 
+                                    <li>by entering a list of <Choices> values in the field definition</li>
+                                    <li>with values that have been entered in a multi-item list elsewhere in your record by using <DataSource> (sometimes called “data-driven dropdowns”)</li>
+                                    <li>by creating lists of "Reusable Choices" that can be referred to by more than one field.  See examples below for the correct XML definition syntax to use. Please note that in this release, Martus will not include data-driven dropdown fields in the Search screen.</li>
+                                    </ol>
+                                    <li>You can set a default value for text and dropdown list fields by using  <DefaultValue>ddd</DefaultValue>, where “ddd” is the value you choose. For dropdowns, you must use a value already in the list of choices you defined. For Reusable Choices dropdowns it can be a partial or complete code, with each level separated by dots (for a location dropdown that has both Region and City levels, you could pick the default to be at either level, e.g. either R1 or R1.C1, see example below). Default values can be set for both standard and custom fields, but are NOT allowed for BOOLEAN, DATE, DATERANGE, GRID, LANGUAGE, MESSAGE, and SECTION field types, and are not allowed for dropdowns where the values in the list are based on data entered in another field (i.e. data-driven dropdowns).</li>
+                                    </ul>
+                                    <li>When you are finished editing your template, save it as an XML file.</li>
+                                    <li><a href="3">Import</a> the template into Martus to use it. </li>
+                                    </ol>
+                                    <h3>Notes on Customizing Feilds</h3>
+                                    <ul class="list">
+                                    <li>XML is case-sensitive. (For example, "Witness" is not the same as "witness.")</li>
+                                    <li>You can use either single or double quotes around the field type name, as long as they match.  (e.g. 'STRING" is not valid. It needs to be 'STRING' or "STRING")</li>
+                                    <li>A BOOLEAN field will appear as a checkbox when you are editing a record, and will be displayed as Yes/No in record previews and when printed.</li>
+                                    <li>Both STRING and MULTILINE fields are text fields.  STRING fields will expand to fit the size of the text you enter, while MULTILINE fields have a scrollbar so that the field doesn’t exceed its original height.</li>
+                                    <li>Use MESSAGE fields to give guidance on how to enter data, and to create comments/notes that will be displayed in every record.</li>
+                                    <li>When you're entering data into a multi-item list, select Add Item to add more data, press Tab to advance to the next cell, and double-click to copy and paste text.  </li>
+                                    <li>A GRID can contain columns of various types:  BOOLEAN, DATE, DATERANGE, DROPDOWN, and STRING.</li>
+                                    <li>You may need to provide guidance to other users by giving them a customization template. To minimize the need for further instruction, use labels that clearly identify the content (such as "Name of Victim").  For more information on exporting customization templates, see <a href="3">Use Templates</a>.</li>
+                                    <li>Please make sure to change your field tags if you change the field label or field type when you edit your customizations, because using the same tag for different labels can cause confusion when searching or reporting on those fields. The only case in which you can keep the same tag when changing a label is if you really want the different labels to be counted as exactly the same (e.g. you are just fixing typos in the labels).</li>
+                                    <li>Please note that default values are only applied when a new record is created, not when a new version of a record is created, so that the value of the field in the previous version is not overwritten.  This means that default values entered in a record using an earlier customization will be kept even if you create a new version of the record with an updated customization that has a new default value.</li>
+                                    </ul>
+                                    <h3>Using “Reusable Choices” (multi-level, nested) dropdown lists</h3>
+                                    <ul class="list">
+                                    <li>Dropdowns using a "Reusable Choices" list can have multiple levels (e.g. for locations that might have Region and City), different fields can use one or more of the levels (e.g. if you have defined Region and City levels, you could have a field that just uses the Region level, and another field that uses both levels), and you do not need to define all levels for all entries (e.g. you could have defined Neighborhood values as a lower level for some larger Cities, but not all Cities need to have Neighborhoods defined).  The number of levels is not limited by Martus, but please note that if you have large amounts of data in your definitions lists, or a large number of levels, performance of certain Martus record operations may be affected.</li> 
+                                    <li>In this release, we recommend that if you want to change the number of levels in a “Reusable Choices” dropdown field when updating a customization, you also change the field tag and/or label so that they are more easily distinguished from each other in searching and reporting.  If you do not, the search/report results may be confusing since fields with the same label/tag will be treated differently due to them having a different number of levels.
+                                    <li>“Reusable Choices” codes have the same restrictions that field tags do; they can be in any language, but cannot contain spaces, special characters, or punctuation.</li>
+                                    <li>Please make sure to not use the same codes in “Reusable Choices” lists if you edit your customizations unless you are just fixing typos in the labels, because using the same code for different labels can cause confusion when searching or reporting on those fields. Ideally you should use codes that are not numeric, but are letters that are a meaningful abbreviation of the label so there is no confusion over what they stand for if you update the customization at a later date (e.g. use 2 or 3 letter abbreviations for locations instead of numbers).
+                                    <li>You cannot use a multiple level / “Reusable Choices” dropdown as a data source for another dropdown inside or outside of multi-item lists. If you try to do this you will see an error message.</li>
+                                    <li>Please note that when you save customization XML with a “Reusable Choices” list for dropdown fields, Martus will move those choice definitions to the bottom of the XML when you reload it.</li>
+                                    <li>Martus doesn't automatically insert a blank entry for Reusable Choices dropdown lists the way it does for other dropdowns.  If you want to be able to select “blank” for the top level of a Reusable Choices dropdown (or a single level Reusable dropdown), you need to explicitly add a blank entry in your customization XML (by adding “<Choice code='' label=''></Choice>” to the top level ONLY of the Reusable Choices list).  If you do not do this, and have not specified a default value (which will mean you will never see blank as an option), the dropdown list will start with the blank entry, but once you pick another value, you will not be able to go back to the blank option.</li>
+                                    </ul>
+                                   <h3>Import Errors with Customized Forms</h3>
+                                   <p>If you receive an error when in import your template, you must correct the problem before you can proceed. If you are not sure what caused the error check the following:</p>
+                                   <ul class="list">
+                                   <li>Ensure that the author, language, entrydate, and title fields are present.</li>
+                                   <li>Remove any labels you created for standard field tags.</li>
+                                   <li>Remove any tags that are repeated.</li>
+                                   <li>Ensure that each custom field you created has a corresponding label.</li>
+                                   <li>Make sure that all text in brackets and quotes has both a start and end bracket/quote.</li>
+                                   <li>Ensure that the customization starts with <FormatTemplate><CustomFields> and ends with </CustomFields></FormatTemplate>.</li>
+                                   </ul>
+                                   <p>Note: You can update your customization if the information you are collecting over time changes, for example by adding new fields. If you are changing fields in a customization, you should think about how you will want to search/report on records created with the old customization as well as new records you create with the new customization, and try to make the changes so that you can search/report on all records at the same time. Changing field types may cause your searching/reporting to be more complex, so we always recommend that you test out creating records with a new customization and searching/reporting on both old and new records before officially updating the customization for your project.<p>
+                                    <h3>Example Form Customization</h3>
+                                    <p><a href="#">Here is XML</a> for a customized form. These fields would look like the figure that follows. It may be helpful to view them side by side </p>
+                                    [image]
+                                    <h3>Questions</h3>
+                                    <p><a href="#">I want to update my customization for a new version of some records that already have data entered but am worried that changes might mess something up. What should I do to avoid any problems?</a></p>
+                                    <p><a href="#">I am seeing fields that look the same to me in Search and Report screen field lists. How can I tell what the difference is between them?</a></p>
+                                </div>
+                            </section><!--//doc-section-->
+
+                    <div class="doc-sidebar hidden-xs">
+                        <nav id="doc-nav">
+                            <ul id="doc-menu" class="nav doc-menu">
+                                <li><a class="scrollto" href="#form-builder-section">Create or Update <br> a Template on the <br> Form Builder Website</a></li>
+                                <li><a class="scrollto" href="#xml-section">Create or Update <br> a template <br> from XML</a></li>
+                            </ul><!--//doc-menu-->
+                        </nav>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+    </div><!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" targe="_blank">Xiaoying Riley</a> for developers</small>
+
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+</body>
+</html>
