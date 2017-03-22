@@ -56,10 +56,11 @@
                 <div class="doc-body">
                     <div class="doc-content">
                         <div class="content-inner">
-                            <p></p>
-                            <p>Some groups find it useful to customize their records to capture specific information such as the source of the record data, the names of witnesses, the country in which the incident occurred, or a table of information about victims. Additionally, you may find it easier to import custom fields into other applications for reporting and analysis.</p>
+                         <section id="form-builder-section" class="doc-section">
+                          <div class="section-block">
+                         <p>Some groups find it useful to customize their records to capture specific information such as the source of the record data, the names of witnesses, the country in which the incident occurred, or a table of information about victims. Additionally, you may find it easier to import custom fields into other applications for reporting and analysis.</p>
                             <p>There are two methods for creating or updating your custom template: Use our form builder website or edit in XML. We recommend the first method if you want to create simple forms and the second for more advanced users, who want to modify existing formats.</p>
-                            <section id="form-builder-section" class="doc-section">
+                            </div><br />
                                 <h2 class="section-title">Create or Update a Template on the Form Builder Website</h2>
                                 <div class="section-block">
                                     <p>Making customized forms for Martus can be done by using the <a href="https://benetech.github.io/forms/">form builder website</a>. Here is a <a href="ttps://youtu.be/Z5wiiknxgxg">video tutorial</a>.<p>
@@ -73,7 +74,24 @@
                                     </ol>
                                 </div>
                             </section><!--//doc-section-->
+
                             <section id="xml-section" class="doc-section">
+                             <div class="section-block">
+                                <p>Most Martus users find that the default record fields meet their needs. However, some groups find it useful to customize their records to capture specific information such as the source of the record data, the names of witnesses, the country in which the incident occurred, or a table of information about victims. Additionally, you may find it easier to import custom fields into other applications for reporting and analysis. You can customize the records you create by rearranging the fields, adding fields, or removing fields you don’t need. You can create several kinds of custom fields, including Yes/No, date, date range, drop-down lists, grid (table), language, messages (notes), single line text, and multi-line text fields.</p>
+                                <h3>About XML</h3>
+                                <p>Making customized forms for Martus can be done by creating a new XML file or editing an existing one. Anyone can learn this basic XML, Benetech is here to hold your hand if you need it. XML code tells Martus what to do. XML uses a series of standard commands: </p>
+                                <p><ul>
+                         <li> Field type: This is the kind of entry you would like to make in your record. There are few different types of fields: strings (text), numbers, dates, dropdowns, checkboxes. You can also use field type to create sections. </li>
+                         <li> Tag: Tag is the name Martus recognizes for each field. Tag is not case sensitive but cannot have spaces or other characters. </li>
+                         <li> Label: Label is the text that will appear in a record. This text can have spaces.</li>
+                        </ul></p>
+                        <p>There are also optional commands:</p>
+                        <p><ul>
+                        <li> Default Value</li>
+                        <li> Required Field</li>
+                        <li> Reusable Choices: i.e. the same options for dropdowns throughout the customization.</li>
+                        </ul></p>
+                          </div>
                                 <h2 class="section-title">Create or update a template from XML</h2>
                                 <div class="section-block">
                                      <p>Editing in XML you can customize the records you create by rearranging the fields, adding fields, or removing fields you don’t need. You can create several kinds of custom fields, including Yes/No, date, date range, drop-down lists, grid (table), language, messages (notes), single line text, and multi-line text fields. </p> 
@@ -159,10 +177,14 @@
                                     <p><a href="#">I am seeing fields that look the same to me in Search and Report screen field lists. How can I tell what the difference is between them?</a></p>
                                 </div>
                             </section><!--//doc-section-->
+                         
 
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                             
                     <div class="doc-sidebar hidden-xs">
                         <nav id="doc-nav">
-                            <ul id="doc-menu" class="nav doc-menu">
+                             <ul id="doc-menu" class="nav doc-menu">
                                 <li><a class="scrollto" href="#form-builder-section">Create or Update <br> a Template on the <br> Form Builder Website</a></li>
                                 <li><a class="scrollto" href="#xml-section">Create or Update <br> a template <br> from XML</a></li>
                             </ul><!--//doc-menu-->
