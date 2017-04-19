@@ -59,7 +59,7 @@
                             <section id="troubleshooting-section" class="doc-section">
                                 <h2 class="section-title">Troubleshooting in Martus</h2>
                                 <div class="section-block">
-                                    <p>Common problems users experience can be found in the <a href="#">FAQ</a>. If you cannot find the answer you need here, Benetech provides user support for free through <a href="mailto:martus@benetech.org">martus@benetech.org</a>. Users can get the best support with problems by sending a good bug report. </p>
+                                    <p>Common problems users experience can be found in the <a href="#faq-section">Frequently Asked Questions Section</a>. If you cannot find the answer you need here, Benetech provides user support for free through <a href="mailto:martus@benetech.org">martus@benetech.org</a>. Users can get the best support with problems by sending a good bug report. </p>
                                     <h3>How to create a good bug report</h3>
                                     <p>If you are having trouble or Martus does something unexpected, please send a big report to <a href="mailto:martus@benetech.org">martus@benetech.org</a>.  Tell Benetech specifically what you expected to happen, what actually happened and as many screenshots as possible. It is extremely helpful to include a copy of the console log.</p>
                                     <h3>Running with the console</h3>
@@ -87,14 +87,15 @@
                                     <p>As long as the terminal is running, and troubleshooting or logging information from Martus will appear there. You can copy and paste the text from the terminal into an email to martus@benetech.org.</p>
                                     <p>In <b>Linux</b>, start Martus from the command-shell line, by typing</p>
                                     <p>java -jar <Martus program directory>/martus.jar
-                                    <p>See Linux portion of <a href="
-                                    #">Getting Started</a> for examples.
+                               </div>
+							   <div>
                                     <h3>Damaged Fonts</h3>
                                     <p>If the log doesn’t help us identify the problem, the issue may be caused by damaged fonts. Damaged fonts may prevent Martus from starting. To determine whether a damaged font is causing the problem, run Martus with the console log (see above), and check to see whether the word "font" appears in the console messages at all. If so, it is likely that damaged fonts are causing the problem. To fix this problem in Windows, copy all of the contents of C:\Windows\Fonts to a temporary location, then delete all of the contents from C:\Windows\Fonts. Then, copy all of the contents back into that folder from the temporary location. This process will reinstall all of the fonts and, in the process, detect any corrupt/damaged fonts. Once the damaged fonts have been identified, manually delete them from C:\Windows\Fonts. </p>
                                     <p>For additional assistance, email <a href="mailto:martus@benetech.org">martus@benetech.org</a></p>
-                                    <h2>Questions</h2>
-                                    <p> <a href="#">Are there any Martus training resources available for my organization?</a>
-                                    <p> <a href="#">I'm running Martus with the console log, but it seems to have stalled. What's going on?></a>
+                                    </div>
+									<div>
+                                    <p> <a href="#q31">Are there any Martus training resources available for my organization?</a>
+                                    <p> <a href="#q21">I'm running Martus with the console log, but it seems to have stalled. What's going on?</a>
                                 </div>
                             </section><!--//doc-section-->
                             <section id="languages-section" class="doc-section">
@@ -102,7 +103,7 @@
                                 <div class="section-block">
                                         <div id="step1"  class="section-block">
                                         <div>
-                                        <p>To select the language in which you wish to use Martus see <a href"#">Change the Interface Language</a></p>
+                                        <p>To select the language in which you wish to use Martus see <a href="4managingrecords.html#settings-and-preferences-section">Change the Interface Language</a></p>
                                             <h3 class="block-title">Language Packs</h3>
                                             <p>A language pack allows you to install new and updated translations and documentation. Language Packs can contain updates to the Martus Client User Interface translation, the User Guide, Quick Start Guide, Readme file, and in-program help. To see current language packs offered for Martus see our webpage: <a href="https://martus.org/resources/documentation.html">https://martus.org/resources/documentation.html</a> </p>
                                     <h3 class="block-title">Accents</h3>
@@ -187,13 +188,12 @@
                                             <p>Start Martus as usual. Pick Khmer from the language dropdown on the Martus SignIn screen. If you get a message saying that the translation is out of date with the current version of Martus, check to see if there is a Martus Language Pack (Martus-km.mlp) available at <a hre="https://www.martus.org">marus.org</a>, and if there is, please download it and copy into your C:\Martus directory, and run Martus again.</p>
                                             <h4>Bengali / Bangla</h4>
                                             <p>In Martus 4.0 or later, Bengali/Bangla fonts should display correctly in Windows without any extra steps required. If you are running Martus 4.0 or later in Bengali/Bangla on Mac and the fonts are not displaying correctly, you can find the Rupali font inside the Fonts folder of the Martus DMG (or zip file) – double-click on it to install. </p>
-                                            <div id="step1"  class="section-block">
+                                            <div id="doc-translations"  class="section-block">
                                             <h3 class="block-title">Documentation Translations</h3>
                                             <p>Benetech often gets the question: Can I get the Martus User Guide in a different language? The answers is yes. In fact, you probably already have multiple versions on your computer. When you install Martus, all the language versions of the user guide and quick start guide that are currently available are installed in your Martus\Docs directory. They are also available at <a href="https://www.martus.org">martus.org</a>, and you can visit this site to see whether new language versions are available. Additionally, there may be language packs available at that same page on Martus web site. A language pack can contain updated versions of the Martus user interface translation, the User Guide, the Quick Start Guide, and the Readme file (which describes the updates between Martus releases) in a particular language.</p>
                                         </div>
-                                   <h3>Questions</h3>
-                                   <p> <a href="#">Why are there more languages available when creating records than in the SignIn screen or Options dialog box?</a>
-                                    <p> <a href="#">When I choose to run Martus in my language I get a warning message that the translation is not up-to-date with the current release of Martus. What should I do?</a>
+                                   <p> <a href="#q8">Why are there more languages available when creating records than in the SignIn screen or Options dialog box?</a>
+                                    <p> <a href="#q25">When I choose to run Martus in my language I get a warning message that the translation is not up-to-date with the current release of Martus. What should I do?</a>
   </div>
                                      </div>
                                 </div>
@@ -201,33 +201,33 @@
                             <section id="faq-section" class="doc-section">
                                 <h2 class="section-title">Frequently Asked Questions</h2>
                                 <ol class="list">
-                                <div class="section-block">
+                                <div id=q1 class="section-block">
                                    <h3 class="block-title q1"><li>I’ve saved a record, but the check mark hasn't appeared in the On Server column.</li></h3>
                                    <p>Ensure you have an active Internet connection, and that you’ve set up a server. Records are not listed as On Server until they have been successfully sent to the server. Records may also take up to an hour to send if you are sending a large attachment, or if the connection is slow. While Martus is sending the record, it displays a progress meter in the status bar at the bottom of the screen. Additionally, when you connect to a server, there may be a delay before the On Server column is populated.</p>
-                                <div class="section-block">
+                                <div id="q2" class="section-block">
                                    <h3 class="block-title q2"><li>Martus won’t accept my password.</li></h3>
                                    <p>Make sure you’re entering the correct username and password, especially if you changed the password recently. Your username and password are case-sensitive. Make sure you’re entering capital letters, as well as spaces and punctuation, exactly as you entered them when you created the username and password. Each time you enter an incorrect username or password, the system delays for a longer period before displaying the Martus SignIn dialog box again. Since Martus does not store your password anywhere, and it uses strong encryption, there is no way to get access to your account without your username and password unless you have performed a multi-file key backup.</p>
-                                <div class="section-block">
+                                <div id=q3 class="section-block">
                                    <h3 class="block-title q3"><li>I want to use Martus on a co-worker’s computer, but it won’t accept my username/password.</li></h3>
                                    <p>You can access Martus only on a computer that contains your key file. Your username and password activate your key, which may not be present on your co-worker’s computer. There can be multiple accounts on a single computer, but your key must be available on that computer for you to access it. To access your account on your co-worker’s computer, click the <b>Restore Account</b> tab in the Martus SignIn dialog box, and then use your backup key file to create the account. And, though you can install your key on more than one computer at a time, remember that you need to update each key if you change your password, and that your data is only as secure as the least secure computer on which you have your account. </p>
-                                <div class="section-block">
+                                <div id=q4 class="section-block">
                                    <h3 class="block-title q4"><li>The records in my account on a co-worker’s computer do not match those on my computer. </li></h3>
                                    <p>If you have set up your account on multiple computers, you can’t access your records from a different computer unless they were saved to the server and downloaded to the current computer. If you overwrite a record on the server from one computer, the version on the server will not match the version on the other computer because the server saves the last version of the record. To download the most recent record version from the backup server, you will need to delete any older versions from your computer. If you want to keep a backup copy of the older record, you can export the record before deleting it. If you delete a record from one computer and from the server, it will still be on the other computer. On that other computer, if you modify the record, it will re-upload it to the server, but if you never modify the record, it will never get re-upload. </p>
-                                <div class="section-block">
+                                <div id=q5 class="section-block">
                                    <h3 class="block-title q5"><li>I’ve versioned record, but I need to make a few changes to it.</li></h3>
                                     <p>Once you’ve versioned a record—whether or not you've sent it to the server, neither you nor anyone else can ever edit the original record again. However, if you have information to add to a versioned record, or need to make an important correction, you can create a new version of the record (see <a href="#">Version a record</a>) and send it to a server. Both the original version and the new version will then be available on your computer and the server.</p>
-                                <div class="section-block">
+                                <div id=q6 class="section-block">
                                    <h3 class="block-title q6"><li>I deleted a record from the Trash, but it still appears in another folder</li></h3>
                                    <p>Delete the record from under all labels before emptying the Trash.</p>
-                                <div class="section-block">
+                                <div id=q7 class="section-block">
                                    <h3 class="block-title"><li>Can I backup my Martus data onto an external hard drive or other removable media?</li></h3>
                                    <p>Yes, if you have a backup device large enough to hold all your data (e.g. CD, USB etc.). Copy the entire Martus folder onto your backup media. This folder contains the Martus application, the Java runtime environment, encrypted key files, configuration data, and records for all Martus accounts on the computer. For a minimal backup, copy only the MartusKeyPair.dat file and the Packets and Accounts folders from your account directory. </p>
-                                <div class="section-block">
-                                   <h3 class="block-title q7"><li>Why are there more languages available when creating records than in the SignIn screen or Options dialog box?</li></h3>
+                                <div id=q8 class="section-block">
+                                   <h3 class="block-title q8"><li>Why are there more languages available when creating records than in the SignIn screen or Options dialog box?</li></h3>
                                    <p>The Options dialog box lets you choose a language for the Martus software user interface. Martus has been translated into several languages. Visit https://www.martus.org to see which languages are currently available, including any language packs that have been added since the latest Martus release. If you are interested in translating Martus into another language, please contact us at martus@benetech.org.</p>
                                    <p>As you noticed, there are several languages available in the Language drop-down list when you create a record. That option specifies the language you use to enter the data into your record. You do not need to type the record in the same language used in your user interface.</p>
-                                <div class="section-block">
-                                   <h3 class="block-title q8"><li>Why does Martus seem slow when I’m doing some tasks?</li></h3>
+                                <div id=q9 class="section-block">
+                                   <h3 class="block-title q9"><li>Why does Martus seem slow when I’m doing some tasks?</li></h3>
                                    <p>Some suggestions for dealing with slow performance are below:</p>
                                    <ol class="list" type="a">
                                     <li>Martus will manipulate records (e.g., sorting, copying/pasting) more efficiently if they are not all in one folder. Consider using separate folders for records from different weeks, by different authors, or related to different topics. Additionally, select a folder with few records before exiting Martus. When you start Martus, it opens the last folder you viewed; if there are fewer records in that folder, Martus will start more quickly.</li>
@@ -255,8 +255,8 @@
                                     </ol>
                                     <p>This will allow Martus to get more memory than it does by default when installed, and will also turn on logging so that if there is a problem we can tell what it might be. The values of the memory switches (512 and 1024) are suggestions, but the best value is dependent on your computer's setup, so you may be able to optimize this setting. For a more specific recommendation, send information about your computer (how much memory or RAM is installed, how much swap or page file space is available, etc.) to martus@benetech.org. In Windows, you can find this information by choosing Start > Programs > Accessories > System Tools > System Information. In Mac, go to the Apple menu > About this Mac > More info… > System report… > Hardware (this is the Hardware Overview). If the pagefile is small, you may want to try to increase it.</p>
 
-                                <div class="section-block">
-                                   <h3 class="block-title q9"><li>I don’t have a Martus shortcut on my desktop or in my Start menu. How can I start Martus?</li></h3>
+                                <div id=q10 class="section-block">
+                                   <h3 class="block-title q10"><li>I don’t have a Martus shortcut on my desktop or in my Start menu. How can I start Martus?</li></h3>
                                    <p>Martus always installs a shortcut in your Martus directory, which you can use to start Martus. Or, use one of the following methods, depending on your operating system:</p>
                                    <p>To start Martus in <b>Windows</b>, open a DOS prompt, change to the Martus directory, and type:
                                     <p>C:\Martus\bin\javaw.exe -jar C:\Martus\martus.jar</p>
@@ -268,22 +268,22 @@
                                    <p>In <b>Linux</b>, start Martus from the command-shell line, by typing:</p>
                                    <p>java -jar <Martus program directory>/martus.jar</p>
                                    <p>See Linux portion of section <a href="#">Getting Started</a> for examples.</p>
-                               <div class="section-block">
+                               <div id=q11 class="section-block">
                                    <h3 class="block-title q10"><li>The Martus main page is slow to appear.</li></h3>
                                    <p>Depending on your computer system, there may be a delay of several seconds between the time you sign in and the Martus main page and workspace appear. Exactly how long it takes depends on the speed of your computer.</p>
-                                <div class="section-block">
-                                   <h3 class="block-title q11"><li>I’m seeing unexpected behavior in Martus. How can I find out what’s going on?</li></h3>
+                                <div id=q12 class="section-block">
+                                   <h3 class="block-title q12"><li>I’m seeing unexpected behavior in Martus. How can I find out what’s going on?</li></h3>
                                    <p>Follow <a href="#">instructions to open a "console log"</a> that displays additional information as Martus runs. This information is helpful to us in diagnosing problems. Note the console log messages you receive as you work in Martus, and e-mail those to <a href="mailto:martus@benetech.org">martus@benetech.org</a>.</p>
                                    <p>If the log doesn’t help us identify the problem, the issue may be caused by <a href="#">damaged fonts</a>.
                                    <p>For additional assistance, email <a href="mailto:martus@benetech.org">martus@benetech.org</a>.</p>
-                                <div class="section-block q12">
+                                <div id=q13 class="section-block q12">
                                    <h3 class="block-title"><li>Is there any limit to the size of records or attachments I can send to the server, or to the number of records I can store there?</li></h3>
                                    <p>No, currently there are no limits for the amount of data, the number of records, or the size of attachments you can send to a Martus Server. However, it's possible that there may be limits on certain servers in the future. If you send very large attachments (e.g. video) to the server just be aware that it will take longer than sending smaller amounts of data.</p>
-                                <div class="section-block q13">
+                                <div id=q14 class="section-block q13">
                                    <h3 class="block-title"><li>Can I get the Martus User Guide in a different language? </li></h3>
                                    <p>Yes. In fact, you probably already have multiple versions on your computer. When you install Martus, all the language versions of the user guide and quick start guide that are currently available are installed in your Martus\Docs directory. For more information see <a href="languages-section">Languages</a></p>
-                                <div class="section-block">
-                                   <h3 class="block-title q14"><li>I’m having problems connecting to the server. What should I do?</li></h3>
+                                <div id=q15 class="section-block">
+                                   <h3 class="block-title q15"><li>I’m having problems connecting to the server. What should I do?</li></h3>
                                    <p>If Martus reports that the server isn’t available or that you can’t connect, first try to “ping” the server (which tells you what your connectivity is like to this server). To ping the server, open a command prompt window in Windows (or a Terminal window in Mac) and type:</p>
                                    <p>ping server-ip-address</p>
                                 <p>(where server-ip-address is the same address you entered when you set up the server), and then press Return.</p> 
@@ -291,10 +291,10 @@
                                    <p>tracert server-ip-address</p>
                                    <p>and then press Return.</p>
                                 <p>Email the results of the ping and the tracert that appear on your computer to <a href="amilto:martus@benetech.org">martus@benetech.org</a>. Be sure to mention that you can’t connect to the server through Martus and tell us the date and time of day that you tried (please also include your time zone.) We’ll determine the nature of the problem and work with the server administrator to resolve it.</p>
-                                <div class="section-block q15">
+                                <div id=q16 class="section-block q16">
                                    <h3 class="block-title"><li>I want to upgrade to a new version of Martus. Do I need to remove the old version first?</li></h3>
                                    <p>No. You can install Martus over an existing version of the software. The installer will notify you that an older version exists. Click Yes to upgrade Martus without losing any of your data, including records, account information, server configurations, or passwords. For more information, see <a href"#">Upgrading Martus</a>.</p>
-                                <div class="section-block q16">
+                                <div id=q17 class="section-block q17">
                                    <h3 class="block-title"><li>When I back up or restore my key using USB drives, Martus doesn’t recognize them as different disks. What’s going on?</li></h3> 
                                    <p>When you first insert a USB (“thumb drive”), the operating system assigns it a drive letter; each drive is assigned a different drive letter. However, Martus expects to find each USB in the same drive. Before backing up your keypair to USB drives, reassign the drive letter for each drive so that they are all the same. </p>
                                     <p>To reassign the drive letter in <b>Windows</b>:</p>
@@ -307,7 +307,7 @@
                                     <li>Select the drive letter you want to assign.</li>
                                     </ol>
                                     <p>If you are using a <b>Mac</b>, and can’t find your USB location, look under the Volumes folder in the main Mac hard drive display.</p>
-                                <div class="section-block q17">
+                                <div id=q18 class="section-block q18">
                                    <h3 class="block-title"><li>I'm having problems getting Martus to run on a Mac. </li></h3>
                                    <p>The problem may be occurring because of incompatible versions of Java installed on your machine. </p>
                                    <p>To check which version of Java you are running, open a Terminal window and type:</p>
@@ -315,7 +315,7 @@
                                    <p>and hit Return/Enter. </p>
                                    <p>As of Martus 4.5, Martus should be run with Java 1.8 (sometimes called Java8) – see the <a href="#">Mac requirements section</a> for more on this.</p>
                                    <p>See earlier versions of the Martus User Guide (at <a href="https://www.martus.org">https://www.martus.org</a>) for instructions for earlier releases of Martus.
-                                <div class="section-block q18">
+                                <div id=q19 class="section-block q19">
                                    <h3 class="block-title"><li>How do I install Martus on Linux so that multiple users on the computer can access it?</li></h3>  
                                    <p>The normal <a href="#">Linux installation instructions</a> only allow Martus to be used by the user who installed it. You can also install Martus on a Linux computer such that any user on that computer will be able to run it. If you do this, any user should be able to run Martus by simply typing "martus" on the command line, from any directory. Each user can also create a launcher or alias to the /usr/bin/martus script. If you install Martus to be available to all users, the program can be more secure (against tampering), but it will be much more difficult to erase quickly, and the "wipeout" feature will not delete the application.</p>
                                    <p>Note that each user's data will still be stored separately, within the user's home directory: ~/.Martus/</p>
@@ -329,13 +329,13 @@
                                     <p>sudo cp martus /usr/bin</p>
                                     </ol>
 
-                                <div class="section-block q19">
+                                <div id=q20 class="section-block q20">
                                    <h3 class="block-title"><li>I created a Martus account solely for the purpose of testing and training and will not be creating records with real data using this account. How do I let server administrators know about it?</li></h3>
                                    <p>Go to <b>Account > Account Information</b>. Martus will bring up a screen displaying various account information, including a public code composed of sets of 4-digit numbers. Please send this public code information to <a href="mailto:martus@benetech.org">martus@benetech.org</a>, letting us know that it is a test account.</p>
-                                <div class="section-block q20">
+                                <div id=q21 class="section-block q21">
                                    <h3 class="block-title"><li>I'm running Martus with the console log, but it seems to have stalled. What's going on? </li></h3>  
                                    <p>In Windows, if you click within the console log, it can cause Windows to suspend that process. When this happens, you will see the word "Select" at the beginning of the console Window Title, or title bar. To "unselect" the console, right-click in the body of the console – this should cause the "Select" message in the Window Title to disappear. To prevent this from happening in the future, right-click in the title bar of the console, select Properties, select the Options tab, and uncheck "Quick Edit Mode." When you hit OK, pick "Modify shortcut that started this window."</p>
-                                <div class="section-block q21">
+                                <div id=q22 class="section-block q22">
                                    <h3 class="block-title"><li>I'm running Martus, but I can’t find the Martus window. How can I find it?</li></h3>
                                    <p>When you change customizations, Martus will do its best to update the old formatted data to the new customization if you create a new version of a record with the old customization. If you add completely new fields but don’t change any of the old fields, the new version of the record will have all the old fields filled in as they were in the previous version, and the new fields will be blank and you can fill them in. If you delete fields, the new version of the record will not contain those fields, but you can go back to see the deleted fields in the previous version if it was a versioned record instead of a saved record (by hitting the Record Details button in the bottom section of the record), and copy any info from the old version into a different field in the new one if desired. </p>
                                     <p>You have to be very careful if you make changes to the customization definitions of old fields. If you keep the same tag and label, but change the type of field, Martus may be able to transfer the old data into the new field type, but not in all cases. For example, </p>
@@ -353,10 +353,10 @@
                                     <p>In this release, if you want to change the number of levels in a “Reusable Choices” dropdown field when updating a customization, you should also change the field tag and/or label so that they are more easily distinguished from each other in searching and reporting. If you do not, the search/report results may be confusing since fields with the same label/tag will be treated differently due to them having a different number of levels. </p>
                                     <p>If you update the default value for a field, please note that the new default value will only be applied when a new record is created, not when a new version of a record is created, so that whatever the value of the field in the previous version was will remain the same and not be overwritten.</p> 
                                     <p>In general if you are making changes to your customization, please make sure to test the transferring of data using a test record. </p>
-                                <div class="section-block q22">
+                                <div id=q23 class="section-block q23">
                                    <h3 class="block-title"><li>If I open a record attachment in Martus does it stay encrypted or could someone who gets hold of my computer read it somehow?</li></h3>
                                    <p> When attachments are stored in Martus records they are encrypted, so that nobody except you can read them. However, when you open an attachment in a Martus record so that another program loads it (e.g. a document in Microsoft Word), your computer Operating System creates a temporary version of the file that is not encrypted, and that file is usually saved to your hard drive, in the standard Temp directory for your Operating System (e.g. “C:\Documents and Settings\your-user-name\Local Settings\Temp” in Windows XP) or “/tmp” for Mac and Linux. If you are concerned about anyone seeing these files, you should at least delete them and empty your Recycled Bin (this will remove them from view of most users, but sophisticated users could still find the content with some work), but best of all would be to use an electronic file “shredder” (E.g. <a href="http://www.fileshredder.org/">http://www.fileshredder.org/</a> for Windows) for any Martus files in the Temp directory. The Martus files in the temp directory will be given names based on the attachment name in Martus. For example, a file named Interview.doc in Martus might appear as something like Interview23424.doc in the Temp directory. This may not work for all Operating Systems, but if you cannot find the Temp directory, you can try opening the file in Martus, and then saving it with a different name so that you can see where the current version of the file is being stored. </p>
-                                <div class="section-block q23">
+                                <div id=q24 class="section-block q24">
                                    <h3 class="block-title"><li>I want to change the number of minutes Martus waits before timing out for security – how can I do this? </li></h3> 
                                    <p> You can change the Martus time-out length when there is no activity to be however long you want, instead of always timing out at the default of 10 minutes.  In addition to providing extra security if you are working in a public place or on a shared computer and want to shorten the timeout to only a few minutes, you can also improve the performance of long operations (such as retrieval of records from the server) by setting the timeout to a longer amount of time if you are working in a secure location.  Different time-out lengths are allowed by setting a parameter in the command line used to run Martus.  The parameter is "--timeout-minutes=X" where X can be any number of minutes.  For example, to set the timeout length for Martus running on your computer in Windows to always be 5 minutes for a higher level of security, change the command line in the desktop shortcut (right-click, and  choose Properties) to the following:</p>
                                     <p> C:\Martus\bin\java.exe -jar C:\Martus\martus.jar --timeout-minutes=5</p>
@@ -376,11 +376,11 @@
                                     <p>You should see the new timeout length in the Martus console.<p>
                                     </ul>
                                     <p>For instructions on how to change the Martus command line for Mac (if you installed from a CD/iso files) or Linux, see <a href="#">Getting Started</a> or email <a href="mailto:martus@benetech.org">martus@benetech.org</a>.</p>
-                                <div class="section-block q24">
+                                <div id=q25 class="section-block q25">
                                    <h3 class="block-title"><li>When I choose to run Martus in my language I get a warning message that the translation is not up-to-date with the current release of Martus. What should I do?</li></h3> 
                                    <p>If there is a translation of an older version of Martus in your language that you can choose to use, it usually means that most of the Martus screens will be in your language, but some newer functionality will not be translated. The more recent the version number of your translation compared to the current version number of the Martus release, the more of the Martus screens will be up to date in your language. Translations that are in your language but not up-to-date with the current English Martus text will be marked with brackets (i.e. <…>) around them, and if you see these in any screens you are using, we recommend switching to English so that you have the latest guidelines on how to use the software. This is especially important in help screens (e.g. customization, search) where new functionality may have been added and the old instructions may be misleading or incomplete.</p>
-                               <div class="section-block q25">
-                                   <h3 class="block-title">I want to run Martus using a different version of Java than the one it comes with, how can I do this?</li></h3> 
+                               <div id=q26 class="section-block q26">
+                                   <h3 class="block-title"><li>I want to run Martus using a different version of Java than the one it comes with, how can I do this?</li></h3> 
                                    <p>The current version of Martus includes Java8 in <b>Windows</b> while earlier versions included Java6. You can run those earlier versions of Martus with Java8 (also sometimes called Java 1.8), if you need to (E.g. to display certain fonts or to help if you are receiving import errors with very large files). Instructions to do this in Windows are as follows: </p>
                                    <ol class="list" type="a">
                                    <li>Before starting Martus, download a newer version of Java (e.g. Java8)(available here: <a href="http://www.java.com/en/">http://www.java.com/en/</a>) and direct the Martus software to use it by doing the following:</li>
@@ -390,8 +390,8 @@
                                    <p>"C:\where-you-installed-java\jre8\bin\java.exe" -jar C:\Martus\martus.jar</p>
                                    </ol>
                                    <p>On <b>Mac</b>, if you have multiple versions of Java installed, you will need to launch the Java Preferences dialogue to change the version of Java that is used. To locate it, hit Command-Space to bring up the "Spotlight" search, and type Java Preferences. Once it is open, you will see two sets of configurations, one for Java applet plugins and another for Java applications. If you wish to change the version of Java Martus uses by default, select the new version using the dialogue instructions, then close out of the Java Preferences screen.</p>
-                               <div class="section-block q26">
-                                   <h3 class="block-title">Martus is finding either more or fewer records than I expected. What could be causing this?</li></h3> 
+                               <div id=q27 class="section-block q27">
+                                   <h3 class="block-title"><li>Martus is finding either more or fewer records than I expected. What could be causing this?</li></h3> 
                                    <p>There are several reasons that Martus might not be finding a record that you expect, or may be finding records that you didn’t expect.</p>
                                    <ol class="list" type="a">
                                    <li>By default, Martus searches all versions of every record. If you do not see your search terms/dates in the final version of the record displayed in the Search Results folder, your criteria may have been matched in an earlier version of the record. You can access previous versions by clicking the <b>Record Details…</b> button at the top of the record. To search only the most recent versions of records, select Only Search Most Recent Versions of Records in the Search dialog box. </li>
@@ -399,13 +399,13 @@
                                    <li>Because Martus searches all rows of any grid (table) fields for your criteria, it may find records where one grid row matches your criteria but other rows do not. For example you could have a record with a grid that has a location field in it and you have multiple rows of data in the grid with locations A, B, and C. If you search for records where location != C (does not equal C), Martus will find that record because there are 2 rows in the record grid where the location is not C, even though there is one row where the locations IS C.</li>
                                    </ol>
                                    <p>For more information about finding records in Martus see <a href="#">Search for specific records</a>.
-                                <div class="section-block q27">
+                                <div id=q28 class="section-block q28">
                                    <h3 class="block-title"><li>I am seeing duplicate entries in my dropdown list search criteria values in the search screen. What could be causing this?</li></h3> 
                                    <p>If you pick a Reusable Choices dropdown field to search on, the values that are displayed as the criteria dropdown list options are the labels for each list entry, but the codes you defined determine how many entries there will be in the search dropdown list. So if you have different reusable choices codes with the same label in different record customizations in your account, the labels will show up twice in search dropdown lists (i.e. if you used label1 for both code1 and code2, you will see 2 entries in the search dropdown that looks like "label1" and if you want your search to be on records that have that label, regardless of which code the customization had for the label, you will need to do a “or” search on both labels). And if you have the same reusable choices code with different labels in different record customizations in your account, the search dropdown list for that code will show both values separated by a semicolon (i.e. if you used code1 for both label1 and label2, you will see an entry in the search dropdown that looks like "label1; label2" and your search will be on records that have either of those labels).</p>
-                                <div class="section-block q28">
+                                <div id=q29 class="section-block q29">
                                    <h3 class="block-title"><li>I am seeing fields that look the same to me in Search and Report screen field lists. How can I tell what the difference is between them?</li></h3> 
                                    <p>If you have fields in different records or from different customizations that are exactly the same, Martus will combine them in any Search and Report field lists. And while Martus warns you about duplicate labels where you are creating a new record customization, it is possible that over time, you may have records with different customizations that ended up with the same labels (e.g. maybe you changed a text field to a dropdown field but kept the same label). In these cases, Martus will try to help you figure out the difference between the fields by displaying what the field type and tag are in the field selection lists. Also, if you have fields with the same tag but different labels and/or field types, Martus may use the tag and field type to try and determine when different fields were meant to be the same. So we encourage you to make your field tags and labels in a customization clearly related to each other to avoid any confusion.</p>
-                               <div class="section-block q29">
+                               <div id=q30 class="section-block-q30">
                                    <h3 class="block-title"><li>Why can’t I find my Martus files on my Mac?</li></h3>
                                    <p>In Mac OS, the Martus data directory (and some other program directories) are hidden by default. These directories are not viewable using the Finder application, and are prefaced with a "." (e.g. ".Martus"). Martus saves some files Contact account files directly to the Martus directory by default (though you can also choose to save them elsewhere on your computer). In order to access these files, you will need to set your computer preferences to "show" these hidden folders. To do so, follow these steps: </p> 
                                    <ol class="list" type="a">
@@ -418,10 +418,10 @@
                                    <p>and hit Enter/Return.)</p> 
                                    <li>When the Finder restarts, you will be able to view the ".Martus" folder within your home directory and access files saved there.</li>
                                    </ol>
-                               <div class="section-block q30">
+                               <div id=q31 class="section-block q31">
                                    <h3 class="block-title"><li>Are there any Martus training resources available for my organization?</li></h3>
-                                    <p>Please see the Martus website for web and video tutorials on how to use Martus, including installation and troubleshooting for Windows and Mac. You can find these at <a href="https://www.martus.org."> martus.org</a>.</p> 
-                               <div class="section-block">
+                                    <p>Please see the Martus website for web and video tutorials on how to use Martus, including installation and troubleshooting for Windows and Mac. You can find these at <a href="https://martus.org/resources/trainingmaterials.html">https://martus.org/resources/trainingmaterials.html</a>.</p> 
+                               <div id=q32 class="section-block">
                                    <h3 class="block-title"><li>I'm double-clicking on the Martus icon on my Desktop and nothing is happening. How do I get Martus to run?</li></h3>
                                    <p>Some users have noticed this issue when running Martus on Windows 7. Please try the following steps to resolve it:</p>
                                    <ul class="list">
@@ -433,12 +433,12 @@
                                    <li>Click Finish to save the settings. </li>
                                    <li>On your desktop, double-click your Martus icon to launch the application.</li>
                                     </ul>
-                               <div class="section-block q31">
+                               <div id=q33 class="section-block q33">
                                    <h3 class="block-title"><li>I am concerned that my internet activity, and/or my connection and sending records to the Martus servers, is being monitored or blocked. What can I do? </li></h3>
                                 <p>The Onion Router, or <a href"https://www.torproject.org">Tor</a>), is software and an open network that provides anonymity and privacy protection over the internet. Tor routes an internet user’s traffic through a global network of relays in such a way as to obscure both the origin and the destination of the traffic. By bouncing your communications around a distributed network all around the world, Tor helps defend against a form of network surveillance known as traffic analysis. It will make sending records harder to track, but also much slower.</p>
                                 <p>WARNING: Before using Tor, please read the full list of warnings available at <a href="https://www.torproject.org/download/download#warning">https://www.torproject.org/download/download#warning</a>. If you have any questions about what Tor does or does not do, or any other Tor-specific questions, email the Tor support team at <a href="mailto:help@rt.torproject.org">help@rt.torproject.org</a>. (For questions about Martus and Tor, email the Martus support team at <a href="mailto:martus@benetech.org">martus@benetech.org</a>). 
                                 <p>You can run Martus with Tor by toggling the Tor button in the Martus main taskbar On / Off.</p>
-                               <div class="section-block q32">
+                               <div id=q34 class="section-block q34">
                                    <h3 class="block-title"><li>I am concerned that my computer is compromised, and/or that my internet activity is constantly being monitored or blocked. What can I do to better protect myself while using Martus?</li></h3>
                                    <p>Users operating in particularly oppressive or antagonistic online contexts may be interested in tools that better preserve their privacy, circumvent censorship and completely bypass a compromised hard drive.</p>
                                    <p>One such tool is Tails (The Amnesic Incognito Live System, <a href="https://tails.boum.org/">https://tails.boum.org/</a>) a free, open source bootable LiveUSB or LiveDVD that offers advanced security and privacy features by default. It allows users to boot from virtually any computer using a previously-configured DVD or USB stick, bypassing that computer’s internal hard drive. Tails anonymizes a user's internet activity by routing all connections through the <a href="#">Tor network</a>, leaves no trace on the computer being used, and provides the latest open source cryptographic tools, allowing users to encrypt their emails, chats and files. Its file system is read-only, so is unaffected by Trojans and other malware.</p>
@@ -451,7 +451,7 @@
                                     </ul>
                                     <p></p>
                                     <p>Martus can be installed on Tails and Benetech can provide insturctions, however these are currently being updated as Tails is supgraded. If you are interested in receiving these instructions or further support for using Martus on Tails, please email <a href="mailto:martus@benetech.org">martus@benetech.org</a></p>
-                                <div class="section-block q33">
+                                <div id=q35 class="section-block q35">
                                    <h3 class="block-title"><li>When I try to run Martus on my Mac (running OS 10.8 +), I see a message that says “Martus.app can’t be opened because it is from an unidentified developer.” How can I run Martus?</li></h3>
                                    <p>On OSX Mountain Lion (10.8) and later, the default security settings sometimes only allow users to run applications that either have been downloaded directly from the Mac App Store, or have been published by one of Apple’s identified developers. The current version of Martus does not meet those criteria, so you can get this warning if you double-click on the app to run it.</p>
                                     <p>Instead of double-clicking to run the Martus app, right-click and choose “Open”. You will still get a warning screen, but you can choose to open the Martus app to run it.</p>
