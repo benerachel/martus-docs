@@ -60,8 +60,9 @@
                                 <h2 class="section-title">What is Martus?</h2>
                                 <div class="section-block">
                                     <p>Named after the Greek word for witness, the Martus Project provides an efficient and secure way to store and retrieve information about human rights abuses. Using the Martus application, you can create records of human rights abuses, attach supporting documents, and store the information on a secure server. Martus encrypts data directly on your computer, and sends this data in an encrypted form to a secure server when you have an internet connection. To learn more about the problems the Martus Project addresses, how Martus is being used throughout the world to securely collect and store sensitive data, and future plans for the project, visit <a href="http://benetech.org/our-programs/human-rights/" target="_blank">http://benetech.org/our-programs/human-rights/</a>.</p>
-                                    </div
-									<div>
+                              </div>
+                              <br /><br />
+                              <div>
                                     <p> <a href="https://martus.org/resources/faqs.html">Frequently asked questions for potential Martus users</a></p>
                                     <p> <a href="8Troubleshooting.html#q29">Are there any Martus training resources available for my organization?</a> </p>
                                 </div>
@@ -98,14 +99,13 @@
                                     <p> <a href="https://martus.org/resources/faqs.html">Frequently asked questions for potential Martus users</a> </p>
                                     <p> <a href="8Troubleshooting.html#q34">I am concerned that my computer is compromised, and/or that my internet activity is constantly being monitored or blocked. What can I do to better protect myself while using Martus?</a></p>
                                      </div>
-                                </div>
-                            </section><!--//doc-section-->
+                                </div></section><!--//doc-section-->
                             <section id="how-does-martus-keep-the-data-secure-section" class="doc-section">
                                 <h2 class="section-title">How does Martus keep the data secure?</h2>
                                 <div class="section-block">
-                                    <p>Every Martus account has a key which can only be accessed using the password for that account. When you sign in to the Martus software, your password enables the application to open the key (associated with the MartusKeyPair.dat file,) so that you can see the records you’ve created and stored.</p><p>Your password is yours alone; without it, no one can open the records you’ve sent to the server, or any of the records on your hard drive. However, if you’ve opted to share records with a Contact, the Contact account holder will be able to see the data that you sent to the server.</p>Information secured with Martus is also protected from being modified by others and the software ensures that no one can create false or inaccurate records using your account. Even if your computer is lost, seized, or stolen, Martus ensures that data entered into Martus records cannot be read by those without permission to access the data.</p>A Martus server is a computer server that accepts encrypted records, securely backs them up, and replicates them to multiple locations, safeguarding the information from loss. (Benetech provides the server software to the organizations that host Martus servers, but it does not host Martus backup servers directly; e-mail <a href="mailto:info@martus.org" target="_blank">martus@benetech.org</a> for a list of potential server hosts.) Any records you haven’t sent to a server exist only on your computer. If your computer is lost, stolen, or damaged, you could lose all of that data. The server acts as a backup mechanism, so the data entered into Martus can be recovered if you lose access to your computer. With your key and your username and password, you can install Martus on a different computer and access all the private data in records you sent to the server. And if you have set up any Contact accounts to receive records from you, sending records to the server makes them available to those accounts.
-                                    </p>
-									</div><div>
+                                    <p>Every Martus account has a key which can only be accessed using the password for that account. When you sign in to the Martus software, your password enables the application to open the key (associated with the MartusKeyPair.dat file,) so that you can see the records you’ve created and stored.</p><p>Your password is yours alone; without it, no one can open the records you’ve sent to the server, or any of the records on your hard drive. However, if you’ve opted to share records with a Contact, the Contact account holder will be able to see the data that you sent to the server.</p><p>Information secured with Martus is also protected from being modified by others and the software ensures that no one can create false or inaccurate records using your account. Even if your computer is lost, seized, or stolen, Martus ensures that data entered into Martus records cannot be read by those without permission to access the data.</p>A Martus server is a computer server that accepts encrypted records, securely backs them up, and replicates them to multiple locations, safeguarding the information from loss. (Benetech provides the server software to the organizations that host Martus servers, but it does not host Martus backup servers directly; e-mail <a href="mailto:info@martus.org" target="_blank">martus@benetech.org</a> for a list of potential server hosts.) Any records you haven’t sent to a server exist only on your computer. If your computer is lost, stolen, or damaged, you could lose all of that data. The server acts as a backup mechanism, so the data entered into Martus can be recovered if you lose access to your computer. With your key and your username and password, you can install Martus on a different computer and access all the private data in records you sent to the server. And if you have set up any Contact accounts to receive records from you, sending records to the server makes them available to those accounts.</p>
+                              </div>
+                          <div>
                                     <p> <a href="https://martus.org/resources/documentation.html#security">About Martus Security</a></p>
                                     <p> <a href="8Troubleshooting.html#q23">If I open a record attachment in Martus does it stay encrypted or could someone who gets hold of my computer read it somehow?</a> </p>
                                 </div>
@@ -230,7 +230,21 @@
                              <p> <a href="8Troubleshooting.html#q2">Martus won't accept my password</a> </p>
                         </div>
                         </section><!--//doc-section-->                         
-
+                    <section id="understanding-encryption" class="doc-section">
+                        <div class="section-block">
+                             <h2 class="section-title">Understanding Encryption</h2>
+                            <p>Encryption scrambles or encodes your data so only those with the secret key or password can decode it. A very simple example to illustrate the conception of encryption:</p>
+                            <p><center>Example:<br />HELLO<br />Algorithm: rotation<br />Key:2<br />Encrypted text:<br />JGNNQ</center></p>
+                            <p>Martus uses a much more complex algorithm of encryption that scrambles the record so that it can only be read by people with the right key.  Encryption protects the records easily and automatically. This is what a record looks like encrypted on your computer or sitting on the server:</p>
+                            <p><img src="https://raw.githubusercontent.com/CodeAllianceOrg/martus-docs/master/images/encryption.png" alt="Encryption image" /></p>
+                            <p>For a technical description of the encrypted used in Martus see the “About Martus Security” section, here: <a href="https://martus.org/resources/documentation.html">https://martus.org/resources/documentation.html</a></p>
+                            <p>Other resources and examples for understanding encryption:</p>
+                            <p><ul>
+                            <li>Mozilla’s emoticon crypto</li>
+                            <li>Youtube videos (language options)</li>
+                            </ul></p>
+                        </div>
+                </section><!--//doc-section-->  
                         </div><!--//content-inner-->
                     </div><!--//doc-content-->
 
